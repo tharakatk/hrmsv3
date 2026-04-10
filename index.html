@@ -1,417 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lifeHRMS | Welcome to the New Way to Work | Leanmo</title>
-    <meta name="description" content="lifeHRMS — Cloud-based, fully configurable HRMS built for growing companies. Payroll, attendance, leave, performance, recruitment. From $3/employee/month.">
-    <meta name="keywords" content="HRMS Sri Lanka, payroll software, HR software, attendance management, leave management, Leanmo, lifeHRMS">
-    <meta name="author" content="Leanmo Software (Pvt) Ltd">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://leanmo.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://leanmo.com/">
-    <meta property="og:title" content="lifeHRMS — Welcome to the New Way to Work">
-    <meta property="og:description" content="Cloud HRMS built for growing companies. Payroll, attendance, leave, performance — all in one.">
-    <meta property="og:image" content="https://leanmo.com/img/screen-hr-metrics-hd.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Leanmo Software (Pvt) Ltd","alternateName":"lifeHRMS","url":"https://leanmo.com","logo":"https://leanmo.com/img/leanmo-logo.jpg","contactPoint":{"@type":"ContactPoint","email":"info@leanmo.com","contactType":"customer service","areaServed":"LK"}}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"lifeHRMS","applicationCategory":"BusinessApplication","operatingSystem":"Web Browser","offers":[{"@type":"Offer","name":"Basic","priceCurrency":"USD","price":"3.00"},{"@type":"Offer","name":"Standard","priceCurrency":"USD","price":"6.00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"230","bestRating":"5"}}</script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/tailwind.config.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Welcome to the New Way to Work | lifeHRMS by Leanmo</title>
+<meta name="description" content="lifeHRMS — comprehensive cloud HRMS for payroll, attendance, leave, performance. Leanmo Software, Sri Lanka.">
+<meta name="author" content="Leanmo Software (Pvt) Ltd">
+<link rel="canonical" href="https://leanmo.com/">
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./js/tailwind.config.js"></script>
+<link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body data-root="./">
+<div id="site-nav"></div>
 
-    <!-- ========== NAVBAR (MintHRM style: clean, logo left, links center, CTA right) ========== -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-gray-100 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <a href="#" class="flex items-center gap-3">
-                    <img src="./img/leanmo-logo.jpg" alt="Leanmo" class="h-11 w-11 rounded-xl object-contain">
-                    <span class="text-xl font-bold text-surface-900 tracking-tight">life<span class="text-brand-600">HRMS</span></span>
-                </a>
-                <div class="hidden lg:flex items-center gap-10">
-                    <div class="relative group">
-                        <button class="text-sm font-medium text-surface-600 hover:text-brand-600 transition-colors flex items-center gap-1">Features <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
-                        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-6 w-[420px] grid grid-cols-2 gap-3">
-                                <a href="#features" class="flex items-center gap-3 p-3 rounded-xl hover:bg-brand-50 transition-colors">
-                                    <div class="w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center text-brand-600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
-                                    <span class="text-sm font-medium text-surface-800">HR Dashboard</span>
-                                </a>
-                                <a href="#features" class="flex items-center gap-3 p-3 rounded-xl hover:bg-brand-50 transition-colors">
-                                    <div class="w-10 h-10 rounded-lg bg-accent-50 flex items-center justify-center text-accent-600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-                                    <span class="text-sm font-medium text-surface-800">Time & Attendance</span>
-                                </a>
-                                <a href="#features" class="flex items-center gap-3 p-3 rounded-xl hover:bg-brand-50 transition-colors">
-                                    <div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center text-orange-600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
-                                    <span class="text-sm font-medium text-surface-800">Absence & Leave</span>
-                                </a>
-                                <a href="#features" class="flex items-center gap-3 p-3 rounded-xl hover:bg-brand-50 transition-colors">
-                                    <div class="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
-                                    <span class="text-sm font-medium text-surface-800">Employee Info</span>
-                                </a>
-                                <a href="#features" class="flex items-center gap-3 p-3 rounded-xl hover:bg-brand-50 transition-colors">
-                                    <div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center text-green-600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-                                    <span class="text-sm font-medium text-surface-800">Payroll & Benefits</span>
-                                </a>
-                                <a href="#features" class="flex items-center gap-3 p-3 rounded-xl hover:bg-brand-50 transition-colors">
-                                    <div class="w-10 h-10 rounded-lg bg-rose-50 flex items-center justify-center text-rose-600"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                                    <span class="text-sm font-medium text-surface-800">Performance</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#about" class="text-sm font-medium text-surface-600 hover:text-brand-600 transition-colors">We Are</a>
-                    <a href="#why" class="text-sm font-medium text-surface-600 hover:text-brand-600 transition-colors">Why lifeHRMS</a>
-                </div>
-                <div class="hidden lg:flex items-center gap-4">
-                    <a href="#demo" class="btn-primary text-sm !py-2.5 !px-6">Get in touch</a>
-                </div>
-                <button id="mobileToggle" class="lg:hidden p-2" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-            </div>
-        </div>
-    </nav>
-    <div id="mobileMenu" class="mobile-menu"><button id="mobileClose" class="absolute top-5 right-6 text-3xl text-surface-800 font-light">&times;</button><a href="#features" class="text-xl font-semibold text-surface-900 mobile-link">Features</a><a href="#about" class="text-xl font-semibold text-surface-900 mobile-link">We Are</a><a href="#why" class="text-xl font-semibold text-surface-900 mobile-link">Why lifeHRMS</a><a href="#demo" class="btn-primary mt-6">Get in touch</a></div>
+<section class="pt-28 lg:pt-36 pb-16 lg:pb-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 lg:px-8"><div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+<div class="reveal">
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 leading-[1.1] tracking-tight">Welcome to the<br><span class="gradient-text">New Way to Work</span></h1>
+<p class="text-lg text-surface-500 mt-6 leading-relaxed max-w-lg"><strong class="text-surface-700">Flexible. Focused. Intuitive.</strong><br>lifeHRMS is a comprehensive cloud-based HRMS designed to simplify, automate, and transform the way organizations manage their workforce. Built on modern HR best practices, it provides a centralized platform for everything from employee records to performance management.</p>
+<div class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md">
+<input type="email" placeholder="Work email *" class="flex-1 px-5 py-3.5 border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600">
+<a href="contact.html" class="btn-primary whitespace-nowrap !rounded-xl">Request a Demo</a>
+</div></div>
+<div class="reveal reveal-delay-2"><div class="hero-image-wrap"><img src="./img/screen-hr-metrics-hd.png" alt="lifeHRMS Dashboard" loading="eager"></div></div>
+</div></div></section>
 
-    <!-- ========== HERO (MintHRM style: split layout, image right, email CTA left) ========== -->
-    <section class="pt-28 lg:pt-36 pb-16 lg:pb-24 overflow-hidden" role="banner">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <!-- Left: Text + CTA -->
-                <div class="reveal">
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-surface-900 leading-[1.1] tracking-tight">
-                        Welcome to the<br><span class="gradient-text">New Way to Work</span>
-                    </h1>
-                    <p class="text-lg text-surface-500 mt-6 leading-relaxed max-w-lg">
-                        <strong class="text-surface-700">Flexible. Focused. Intuitive.</strong><br>
-                        Cloud-based, fully configurable HRMS built on HR best practices. Automated and global-ready, empowering your team with digital innovation.
-                    </p>
-                    <div class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md">
-                        <input type="email" placeholder="Work email *" class="flex-1 px-5 py-3.5 border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600 transition-all">
-                        <a href="#demo" class="btn-primary whitespace-nowrap !rounded-xl">Request a Demo</a>
-                    </div>
-                </div>
-                <!-- Right: Dashboard screenshot -->
-                <div class="reveal reveal-delay-2">
-                    <div class="hero-image-wrap">
-                        <img src="./img/screen-hr-metrics-hd.png" alt="lifeHRMS Dashboard — employee metrics, department charts, anniversary reminders" class="w-full rounded-2xl" loading="eager">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="py-14 bg-surface-50">
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+<h2 class="text-center text-xl font-semibold text-surface-800 mb-4 reveal">Empowering <span class="text-brand-600">200+</span> Companies to Run Better</h2>
+<p class="text-center text-sm text-surface-400 max-w-2xl mx-auto mb-10 reveal reveal-delay-1">Trusted by organizations across industries — from startups to enterprises. Our platform helps businesses streamline HR operations through automation and data-driven insights.</p>
+<div class="client-ticker overflow-hidden reveal reveal-delay-2">
+<div class="flex items-center animate-ticker">
+<div class="flex items-center min-w-max">
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-talawakelle.png" alt="Talawakelle Tea Estates" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-st-interiors.png" alt="S&T Interiors and Contracting" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-swisstek-aluminium.png" alt="Swisstek Aluminium" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-lyceum.png" alt="Lyceum International Schools" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-theme-resorts.png" alt="Theme Resorts & Spas" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-connaissance.png" alt="Connaissance De Ceylan" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-galle-international.png" alt="Galle International College" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-wijeya.png" alt="Wijeya Newspapers" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-bdo.png" alt="BDO Partners" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-sunro.png" alt="Sunro Graphics" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-transco.png" alt="Transco Cargo" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-sunpower.png" alt="Sunpower Energy" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-kap.png" alt="KAP - Kandetiya Plantation" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-swisstek-ceylon.png" alt="Swisstek Ceylon PLC" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-kanoka.png" alt="Kanoka International" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-taiyo.png" alt="Taiyo Enterprises" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+</div>
+<div class="flex items-center min-w-max" aria-hidden="true">
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-talawakelle.png" alt="Talawakelle Tea Estates" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-st-interiors.png" alt="S&T Interiors and Contracting" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-swisstek-aluminium.png" alt="Swisstek Aluminium" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-lyceum.png" alt="Lyceum International Schools" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-theme-resorts.png" alt="Theme Resorts & Spas" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-connaissance.png" alt="Connaissance De Ceylan" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-galle-international.png" alt="Galle International College" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-wijeya.png" alt="Wijeya Newspapers" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-bdo.png" alt="BDO Partners" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-sunro.png" alt="Sunro Graphics" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-transco.png" alt="Transco Cargo" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-sunpower.png" alt="Sunpower Energy" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-kap.png" alt="KAP - Kandetiya Plantation" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-swisstek-ceylon.png" alt="Swisstek Ceylon PLC" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-kanoka.png" alt="Kanoka International" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+<div class="client-logo flex-shrink-0 px-5"><img src="./img/logo-taiyo.png" alt="Taiyo Enterprises" class="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" loading="lazy"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- ========== TRUST BAR (MintHRM: "Empowering 200+ Companies") ========== -->
-    <section class="py-14 bg-surface-50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <h2 class="text-center text-xl font-semibold text-surface-800 mb-10 reveal">Empowering <span class="text-brand-600">200+</span> Companies To Run Better</h2>
-            <div class="flex flex-wrap items-center justify-center gap-x-14 gap-y-6 opacity-30">
-                <span class="text-2xl font-bold text-surface-800">Acme Co</span>
-                <span class="text-2xl font-bold text-surface-800">Nextera</span>
-                <span class="text-2xl font-bold text-surface-800">Orbis</span>
-                <span class="text-2xl font-bold text-surface-800">Vertex</span>
-                <span class="text-2xl font-bold text-surface-800">Helix</span>
-                <span class="text-2xl font-bold text-surface-800">Prism</span>
-            </div>
-        </div>
-    </section>
+<section class="py-20 lg:py-28">
+<div class="max-w-7xl mx-auto px-6 lg:px-8"><div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+<div class="reveal"><div class="apple-screenshot"><div class="apple-screenshot-inner"><img src="./img/screen-attendance-hd.png" alt="Attendance Dashboard" loading="lazy"></div></div></div>
+<div class="reveal reveal-delay-1">
+<h2 class="text-3xl lg:text-4xl font-bold text-surface-900 leading-tight">Focus on your employees,<br>not the paperwork</h2>
+<p class="text-surface-500 mt-4 leading-relaxed">Managing HR processes manually can be time-consuming, error-prone, and inefficient. lifeHRMS eliminates these challenges by automating routine tasks and providing a centralized system for all HR activities.</p>
+<div class="mt-8 space-y-4">
+<div class="mint-tab active" onclick="switchTab(this)"><div class="mint-tab-dot"></div><div><div class="font-semibold text-surface-900 text-sm">User Friendly Dashboard</div><p class="tab-desc text-xs text-surface-400 mt-1">A clean and intuitive dashboard providing instant access to key HR insights for quick, informed decisions.</p></div></div>
+<div class="mint-tab" onclick="switchTab(this)"><div class="mint-tab-dot"></div><div><div class="font-semibold text-surface-900 text-sm">Easily Rearrange Widgets</div><p class="tab-desc text-xs text-surface-400 mt-1 hidden">Customize your dashboard layout with flexible drag-and-drop widget controls to match your workflow.</p></div></div>
+<div class="mint-tab" onclick="switchTab(this)"><div class="mint-tab-dot"></div><div><div class="font-semibold text-surface-900 text-sm">Mobility — Work From Anywhere</div><p class="tab-desc text-xs text-surface-400 mt-1 hidden">Access your HR system securely from anywhere, optimized for desktops, tablets, and smartphones.</p></div></div>
+<div class="mint-tab" onclick="switchTab(this)"><div class="mint-tab-dot"></div><div><div class="font-semibold text-surface-900 text-sm">Cost Effective for Every Team Size</div><p class="tab-desc text-xs text-surface-400 mt-1 hidden">A scalable, affordable solution delivering maximum value — eliminating the need for multiple tools.</p></div></div>
+</div></div>
+</div></div></section>
 
-    <!-- ========== FOCUS SECTION (MintHRM: "Focus on employees, not paperwork" with screenshot + tabs) ========== -->
-    <section class="py-20 lg:py-28">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                <div class="reveal">
-                    <div class="rounded-2xl overflow-hidden shadow-2xl shadow-brand-900/10 border border-surface-100">
-                        <img src="./img/screen-attendance-hd.png" alt="lifeHRMS Attendance Dashboard" class="w-full block" loading="lazy">
-                    </div>
-                </div>
-                <div class="reveal reveal-delay-1">
-                    <h2 class="text-3xl lg:text-4xl font-bold text-surface-900 leading-tight">Focus on your employees,<br>not the paperwork</h2>
-                    <p class="text-surface-500 mt-4 leading-relaxed">Streamline HR tasks, ensure compliance, and strengthen team productivity.</p>
-                    <div class="mt-8 space-y-4">
-                        <div class="mint-tab active" onclick="switchTab(this, 0)">
-                            <div class="mint-tab-dot"></div>
-                            <div>
-                                <div class="font-semibold text-surface-900 text-sm">User friendly dashboard</div>
-                                <p class="text-xs text-surface-400 mt-1">A clean, intuitive page that makes information easy to find and actions simple to complete.</p>
-                            </div>
-                        </div>
-                        <div class="mint-tab" onclick="switchTab(this, 1)">
-                            <div class="mint-tab-dot"></div>
-                            <div><div class="font-semibold text-surface-900 text-sm">Easily rearrange widgets on screen</div></div>
-                        </div>
-                        <div class="mint-tab" onclick="switchTab(this, 2)">
-                            <div class="mint-tab-dot"></div>
-                            <div><div class="font-semibold text-surface-900 text-sm">Mobility — work from anywhere</div></div>
-                        </div>
-                        <div class="mint-tab" onclick="switchTab(this, 3)">
-                            <div class="mint-tab-dot"></div>
-                            <div><div class="font-semibold text-surface-900 text-sm">Cost effective for every team size</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="relative py-24 lg:py-32 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-brand-700 via-brand-600 to-accent-500"></div>
+<div class="absolute inset-0 opacity-10" style="background-image:url('./img/dashboard-overhead.jpg');background-size:cover;background-position:center"></div>
+<div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+<h2 class="text-3xl lg:text-5xl font-bold text-white leading-tight reveal">Empowering your team to<br>work smarter, <em>every day</em></h2>
+<a href="contact.html" class="mt-8 inline-flex reveal reveal-delay-1 bg-white text-brand-700 font-semibold px-8 py-3.5 rounded-xl hover:bg-surface-50 transition-all">Request Demo</a>
+</div></section>
 
-    <!-- ========== INSPIRATIONAL BANNER (MintHRM: fullwidth image + quote + CTA) ========== -->
-    <section class="relative py-24 lg:py-32 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-r from-brand-700 via-brand-600 to-accent-500"></div>
-        <div class="absolute inset-0 opacity-10" style="background-image:url('./img/dashboard-overhead.jpg');background-size:cover;background-position:center;"></div>
-        <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-            <h2 class="text-3xl lg:text-5xl font-bold text-white leading-tight reveal">Work is part and parcel of your life — <em>enjoy it</em></h2>
-            <a href="#demo" class="btn-accent mt-8 inline-flex reveal reveal-delay-1 !bg-white !text-brand-700 hover:!bg-surface-50">Request Demo</a>
-        </div>
-    </section>
+<section class="py-20 lg:py-28 bg-surface-50">
+<div class="max-w-6xl mx-auto px-6 lg:px-8">
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+<a href="product/dashboard.html" class="mint-feature-card reveal"><div class="mint-feature-icon bg-brand-50 text-brand-600 text-xl">📊</div><span class="text-sm font-semibold text-surface-800">HR Dashboard</span><p class="text-xs text-surface-400 leading-relaxed">Real-time insights into attendance, performance, payroll, and key HR metrics.</p></a>
+<a href="product/attendance.html" class="mint-feature-card reveal reveal-delay-1"><div class="mint-feature-icon bg-accent-50 text-accent-600 text-xl">⏱</div><span class="text-sm font-semibold text-surface-800">Time & Attendance</span><p class="text-xs text-surface-400 leading-relaxed">Automated tracking of working hours, shifts, overtime, and absences.</p></a>
+<a href="product/leave.html" class="mint-feature-card reveal reveal-delay-2"><div class="mint-feature-icon bg-orange-50 text-orange-600 text-xl">📋</div><span class="text-sm font-semibold text-surface-800">Absence & Leave</span><p class="text-xs text-surface-400 leading-relaxed">Simplified leave requests, approvals, and full visibility into balances.</p></a>
+<a href="product/payroll.html" class="mint-feature-card reveal reveal-delay-3"><div class="mint-feature-icon bg-green-50 text-green-600 text-xl">💰</div><span class="text-sm font-semibold text-surface-800">Payroll & Benefits</span><p class="text-xs text-surface-400 leading-relaxed">Automated salary calculations, deductions, and compliance management.</p></a>
+<a href="product/recruitment.html" class="mint-feature-card reveal"><div class="mint-feature-icon bg-cyan-50 text-cyan-600 text-xl">🎯</div><span class="text-sm font-semibold text-surface-800">Recruitment</span><p class="text-xs text-surface-400 leading-relaxed">Job postings, applicant tracking, interview scheduling, onboarding.</p></a>
+<a href="product/performance.html" class="mint-feature-card reveal reveal-delay-1"><div class="mint-feature-icon bg-rose-50 text-rose-600 text-xl">⭐</div><span class="text-sm font-semibold text-surface-800">Performance</span><p class="text-xs text-surface-400 leading-relaxed">Structured reviews, goal setting, and progress tracking.</p></a>
+<a href="product/dashboard.html" class="mint-feature-card reveal reveal-delay-2"><div class="mint-feature-icon bg-purple-50 text-purple-600 text-xl">👤</div><span class="text-sm font-semibold text-surface-800">Employee Info</span><p class="text-xs text-surface-400 leading-relaxed">Detailed profiles with personal info, roles, history, and documents.</p></a>
+<a href="product/dashboard.html" class="mint-feature-card reveal reveal-delay-3"><div class="mint-feature-icon bg-indigo-50 text-indigo-600 text-xl">📚</div><span class="text-sm font-semibold text-surface-800">Learning</span><p class="text-xs text-surface-400 leading-relaxed">Training programs, development plans, and learning management.</p></a>
+</div></div></section>
 
-    <!-- ========== FEATURE GRID (MintHRM: icon + label cards in a row) ========== -->
-    <section id="features" class="py-20 lg:py-28 bg-surface-50">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                <div class="mint-feature-card reveal">
-                    <div class="mint-feature-icon bg-brand-50 text-brand-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
-                    <span class="text-sm font-semibold text-surface-800">HR Dashboard</span>
-                </div>
-                <div class="mint-feature-card reveal reveal-delay-1">
-                    <div class="mint-feature-icon bg-purple-50 text-purple-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div>
-                    <span class="text-sm font-semibold text-surface-800">Employee Information</span>
-                </div>
-                <div class="mint-feature-card reveal reveal-delay-2">
-                    <div class="mint-feature-icon bg-accent-50 text-accent-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-                    <span class="text-sm font-semibold text-surface-800">Time & Attendance</span>
-                </div>
-                <div class="mint-feature-card reveal reveal-delay-3">
-                    <div class="mint-feature-icon bg-orange-50 text-orange-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div>
-                    <span class="text-sm font-semibold text-surface-800">Absence & Leave</span>
-                </div>
-                <div class="mint-feature-card reveal">
-                    <div class="mint-feature-icon bg-green-50 text-green-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-                    <span class="text-sm font-semibold text-surface-800">Payroll & Benefits</span>
-                </div>
-                <div class="mint-feature-card reveal reveal-delay-1">
-                    <div class="mint-feature-icon bg-cyan-50 text-cyan-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
-                    <span class="text-sm font-semibold text-surface-800">Recruitment</span>
-                </div>
-                <div class="mint-feature-card reveal reveal-delay-2">
-                    <div class="mint-feature-icon bg-rose-50 text-rose-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-                    <span class="text-sm font-semibold text-surface-800">Performance Management</span>
-                </div>
-                <div class="mint-feature-card reveal reveal-delay-3">
-                    <div class="mint-feature-icon bg-indigo-50 text-indigo-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
-                    <span class="text-sm font-semibold text-surface-800">Learning & Development</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="relative py-24 lg:py-32 overflow-hidden">
+<div class="absolute inset-0 bg-surface-900"></div>
+<div class="absolute inset-0 opacity-15" style="background-image:url('./img/dashboard-analytics.jpg');background-size:cover;filter:blur(2px)"></div>
+<div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+<h2 class="text-3xl lg:text-5xl font-bold text-white leading-tight reveal">We work together, as a<br>seamless <span class="text-accent-400">connected team</span></h2>
+<p class="text-white/60 mt-4 max-w-xl mx-auto reveal reveal-delay-1">Whether remote, multi-location, or on the move — lifeHRMS ensures continuous access to every HR function.</p>
+<a href="contact.html" class="btn-primary mt-8 inline-flex reveal reveal-delay-2">Request Demo</a>
+</div></section>
 
-    <!-- ========== TEAM BANNER (MintHRM: "We work together as a seamless remote team") ========== -->
-    <section class="relative py-24 lg:py-32 overflow-hidden">
-        <div class="absolute inset-0 bg-surface-900"></div>
-        <div class="absolute inset-0 opacity-20" style="background-image:url('./img/dashboard-analytics.jpg');background-size:cover;background-position:center;filter:blur(2px);"></div>
-        <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-            <h2 class="text-3xl lg:text-5xl font-bold text-white leading-tight reveal">We work together, as a<br>seamless <span class="text-accent-400">remote team</span></h2>
-            <a href="#demo" class="btn-primary mt-8 inline-flex reveal reveal-delay-1">Request Demo</a>
-        </div>
-    </section>
+<section class="py-20 lg:py-28">
+<div class="max-w-4xl mx-auto px-6 lg:px-8">
+<div class="bg-white rounded-3xl border border-surface-100 shadow-lg p-8 lg:p-12 reveal">
+<svg class="text-brand-200 mb-4" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+<blockquote class="text-lg text-surface-700 leading-relaxed">"It is simple, user friendly, intuitive and has all the features we need. We had it up and running almost immediately at a reasonable price. Our users said it's a very complete tool and simple to use."</blockquote>
+<div class="mt-6 flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold text-sm">HR</div><div><div class="font-semibold text-surface-900">HR Director</div><div class="text-sm text-surface-400">Mid-size Enterprise Customer</div></div></div>
+</div></div></section>
 
-    <!-- ========== WHY lifeHRMS / ABOUT (MintHRM "Why Mint" style: product screenshots stacked) ========== -->
-    <section id="why" class="py-20 lg:py-28">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
-                <div class="reveal">
-                    <span class="text-sm font-semibold text-brand-600 uppercase tracking-wider">Analytical Dashboard</span>
-                    <h3 class="text-2xl lg:text-3xl font-bold text-surface-900 mt-3 mb-4 leading-tight">Transform HR data into clear, actionable insights</h3>
-                    <p class="text-surface-500 leading-relaxed mb-6">Uncover trends and make informed decisions to drive employee engagement and business growth.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-xs font-bold">✓</span>Real-Time HR Insights</li>
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-xs font-bold">✓</span>Data-Driven Decision Making</li>
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center text-xs font-bold">✓</span>Enhanced Employee Engagement</li>
-                    </ul>
-                </div>
-                <div class="reveal reveal-delay-2">
-                    <div class="rounded-2xl overflow-hidden shadow-xl shadow-surface-200/40 border border-surface-100">
-                        <img src="./img/screen-analytics-hd.png" alt="lifeHRMS Analytics Dashboard" class="w-full block" loading="lazy">
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
-                <div class="order-2 lg:order-1 reveal reveal-delay-2">
-                    <div class="rounded-2xl overflow-hidden shadow-xl shadow-surface-200/40 border border-surface-100">
-                        <img src="./img/screen-overhead-hd.png" alt="lifeHRMS Payroll Dashboard" class="w-full block" loading="lazy">
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2 reveal">
-                    <span class="text-sm font-semibold text-accent-600 uppercase tracking-wider">Payroll</span>
-                    <h3 class="text-2xl lg:text-3xl font-bold text-surface-900 mt-3 mb-4 leading-tight">Process salary accurately, every single time</h3>
-                    <p class="text-surface-500 leading-relaxed mb-6">Automate statutory deductions, generate payslips in minutes. Keep your workforce happy and compliant.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-accent-50 text-accent-600 flex items-center justify-center text-xs font-bold">✓</span>Accurate Salary Processing</li>
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-accent-50 text-accent-600 flex items-center justify-center text-xs font-bold">✓</span>Automated Compliance</li>
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-accent-50 text-accent-600 flex items-center justify-center text-xs font-bold">✓</span>Instant Payslip Generation</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                <div class="reveal">
-                    <span class="text-sm font-semibold text-purple-600 uppercase tracking-wider">Leave Balance</span>
-                    <h3 class="text-2xl lg:text-3xl font-bold text-surface-900 mt-3 mb-4 leading-tight">Check, track, and plan your time off with ease</h3>
-                    <p class="text-surface-500 leading-relaxed mb-6">Transparent, real-time leave information for both employees and managers.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center text-xs font-bold">✓</span>Informed Leave Planning</li>
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center text-xs font-bold">✓</span>Usage History Tracking</li>
-                        <li class="flex items-center gap-3 text-sm text-surface-600"><span class="w-6 h-6 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center text-xs font-bold">✓</span>Real-Time Leave Visibility</li>
-                    </ul>
-                </div>
-                <div class="reveal reveal-delay-2">
-                    <div class="rounded-2xl overflow-hidden shadow-xl shadow-surface-200/40 border border-surface-100">
-                        <img src="./img/screen-attendance-detail-hd.png" alt="lifeHRMS Leave & Attendance Detail" class="w-full block" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== TESTIMONIAL (MintHRM style: image + quote side by side) ========== -->
-    <section class="py-20 lg:py-28 bg-surface-50" id="about">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <h2 class="text-3xl lg:text-4xl font-bold text-surface-900 text-center mb-16 reveal">The best places to work trust <span class="text-brand-600">lifeHRMS</span></h2>
-            <div class="max-w-4xl mx-auto bg-white rounded-3xl border border-surface-100 shadow-lg p-8 lg:p-12 reveal">
-                <div class="flex flex-col lg:flex-row gap-8 items-start">
-                    <div class="flex-1">
-                        <svg class="text-brand-200 mb-4" width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        <blockquote class="text-lg text-surface-700 leading-relaxed">"It is simple, user friendly, intuitive and has all the features we need. We had it up and running almost immediately at a reasonable price. Our users said it's a very complete tool and simple to use."</blockquote>
-                        <div class="mt-6 flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-700 font-bold text-sm">HR</div>
-                            <div>
-                                <div class="font-semibold text-surface-900">HR Director</div>
-                                <div class="text-sm text-surface-400">Mid-size Enterprise Customer</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== DEMO CTA (MintHRM: "Develop your people" + screenshot + form) ========== -->
-    <section id="demo" class="py-20 lg:py-28">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <h2 class="text-3xl lg:text-4xl font-bold text-surface-900 text-center mb-4 reveal">Develop your people, <span class="gradient-text">scale your business</span></h2>
-            <p class="text-center text-surface-500 mb-16 reveal reveal-delay-1">The best companies enhance their people enablement processes with lifeHRMS.</p>
-
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div class="reveal">
-                    <div class="rounded-2xl overflow-hidden shadow-xl border border-surface-100">
-                        <img src="./img/screen-hr-metrics-hd.png" alt="lifeHRMS Dashboard Demo" class="w-full block" loading="lazy">
-                    </div>
-                </div>
-                <div class="reveal reveal-delay-2">
-                    <div class="bg-surface-50 rounded-3xl p-8 lg:p-10">
-                        <h3 class="text-2xl font-bold text-surface-900 mb-2">Schedule a Demo</h3>
-                        <p class="text-sm text-surface-500 mb-8">Our friendly experts are happy to answer your questions or set up a free 14-day trial for you.</p>
-                        <form onsubmit="return handleFormSubmit(event)">
-                            <div class="mb-4">
-                                <input type="text" placeholder="Full name *" required class="w-full px-4 py-3.5 bg-white border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600 transition-all">
-                            </div>
-                            <div class="mb-4">
-                                <input type="email" placeholder="Work email *" required class="w-full px-4 py-3.5 bg-white border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600 transition-all">
-                            </div>
-                            <div class="mb-4">
-                                <input type="text" placeholder="Company name" class="w-full px-4 py-3.5 bg-white border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600 transition-all">
-                            </div>
-                            <div class="mb-4">
-                                <input type="tel" placeholder="Phone number" class="w-full px-4 py-3.5 bg-white border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600 transition-all">
-                            </div>
-                            <div class="mb-6">
-                                <textarea rows="3" placeholder="Tell us about your needs..." class="w-full px-4 py-3.5 bg-white border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600 transition-all resize-none"></textarea>
-                            </div>
-                            <button type="submit" class="btn-primary w-full justify-center">Request Demo</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== NEWSLETTER BANNER (MintHRM style: colored banner with CTA) ========== -->
-    <section class="py-16 bg-gradient-to-r from-brand-600 to-brand-700">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-            <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4 reveal">Subscribe to our Newsletter</h2>
-            <p class="text-white/70 mb-8 reveal reveal-delay-1">Get insider updates, special offers, and exclusive content delivered straight to you.</p>
-            <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto reveal reveal-delay-2">
-                <input type="email" placeholder="Your email address" class="flex-1 px-5 py-3.5 rounded-xl text-sm focus:outline-none border-0">
-                <button class="btn-accent !rounded-xl whitespace-nowrap">Subscribe</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== FOOTER (MintHRM style: logo + info left, columns right) ========== -->
-    <footer class="bg-surface-950 text-white pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
-                <!-- Brand -->
-                <div>
-                    <a href="#" class="flex items-center gap-3 mb-5">
-                        <img src="./img/leanmo-logo.jpg" alt="Leanmo" class="h-10 w-10 rounded-xl object-contain bg-white p-0.5">
-                        <span class="text-lg font-bold tracking-tight">life<span class="text-brand-400">HRMS</span></span>
-                    </a>
-                    <p class="text-sm text-white/50 leading-relaxed mb-5">Next Generation Human Resources Solution</p>
-                    <div class="space-y-2 text-sm text-white/40">
-                        <p>info@leanmo.com</p>
-                        <p>Sri Lanka</p>
-                    </div>
-                </div>
-                <!-- Support -->
-                <div>
-                    <h4 class="text-sm font-semibold mb-5 text-white/70 uppercase tracking-wider">Support</h4>
-                    <ul class="space-y-3 text-sm text-white/40">
-                        <li><a href="#" class="hover:text-white transition-colors">Pricing Plan</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Guide</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Tutorial</a></li>
-                    </ul>
-                </div>
-                <!-- Company -->
-                <div>
-                    <h4 class="text-sm font-semibold mb-5 text-white/70 uppercase tracking-wider">Company</h4>
-                    <ul class="space-y-3 text-sm text-white/40">
-                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#demo" class="hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- Terms -->
-                <div>
-                    <h4 class="text-sm font-semibold mb-5 text-white/70 uppercase tracking-wider">Terms & Privacy</h4>
-                    <ul class="space-y-3 text-sm text-white/40">
-                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Legal Disclaimers</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-white/10 pt-8 text-center">
-                <p class="text-sm text-white/30">&copy; 2026, Leanmo Software (Pvt) Ltd. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="./js/main.js"></script>
-    <script>
-        // MintHRM-style tab switching
-        function switchTab(el, index) {
-            document.querySelectorAll('.mint-tab').forEach(t => t.classList.remove('active'));
-            el.classList.add('active');
-        }
-    </script>
-</body>
-</html>
+<section class="py-20 lg:py-28 bg-surface-50"><div class="max-w-7xl mx-auto px-6 lg:px-8">
+<h2 class="text-3xl lg:text-4xl font-bold text-surface-900 text-center mb-4 reveal">Develop your people, <span class="gradient-text">scale your business</span></h2>
+<p class="text-center text-surface-500 mb-16 max-w-2xl mx-auto reveal reveal-delay-1">The best companies enhance their people enablement processes with lifeHRMS.</p>
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="reveal"><div class="rounded-2xl overflow-hidden shadow-xl border border-surface-100"><img src="./img/screen-hr-metrics-hd.png" alt="lifeHRMS Demo" class="w-full" loading="lazy"></div></div>
+<div class="reveal reveal-delay-2"><div class="bg-white rounded-3xl p-8 lg:p-10 shadow-sm border border-surface-100">
+<h3 class="text-2xl font-bold text-surface-900 mb-2">Schedule a Demo</h3>
+<p class="text-sm text-surface-500 mb-8">Our experts are happy to answer your questions or set up a free 14-day trial.</p>
+<form onsubmit="return handleFormSubmit(event)">
+<div class="mb-4"><input type="text" placeholder="Full name *" required class="w-full px-4 py-3.5 bg-surface-50 border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600"></div>
+<div class="mb-4"><input type="email" placeholder="Work email *" required class="w-full px-4 py-3.5 bg-surface-50 border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600"></div>
+<div class="mb-4"><input type="text" placeholder="Company" class="w-full px-4 py-3.5 bg-surface-50 border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600"></div>
+<div class="mb-6"><input type="tel" placeholder="Phone" class="w-full px-4 py-3.5 bg-surface-50 border border-surface-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-500/20 focus:border-brand-600"></div>
+<button type="submit" class="btn-primary w-full justify-center">Request Demo</button>
+</form></div></div></div></div></section>
+<div id="site-footer"></div>
+<script src="./js/main.js"></script>
+</body></html>
